@@ -9,10 +9,12 @@ body {
   color: rgb(0, 0, 0);
 }
 
+/* Wrapper container  */
 .big-container {
   display: flex;
 }
 
+/* Sidebar */
 .container {
   flex: 1;
   height: 100vh;
@@ -84,7 +86,7 @@ body {
   
 }
 
-/* Top-right side */
+/* Top-right */
 .top-bar {
   flex: 1;
   /* min-height: 200px; */
@@ -167,6 +169,7 @@ body {
   align-self: center;
 }
 
+/* Main content */
 .main-content {
   flex: 6;
 }
