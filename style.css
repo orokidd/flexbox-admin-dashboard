@@ -18,8 +18,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  border: solid 1px red;
   min-width: 180px;
+  max-width: 260px;
   background-color: rgb(149, 161, 161);
 }
 
@@ -40,14 +40,28 @@ body {
 
 .options-1 {
   flex: 3;
+  padding: 24px;
+}
+
+.options-1 > ul {
+  list-style: none;
+}
+.options-1 li {
+  margin-bottom: 12px;
 }
 
 .options-2 {
-  flex: 3;
+  flex: 5;
+  padding: 24px;
+}
+.options-2 > ul {
+  list-style: none;
+}
+.options-2 li {
+  margin-bottom: 12px;
 }
 
 .container-2 {
-  border: solid 1px red;
   height: 100vh;
   flex: 4;
   display: flex;
@@ -68,7 +82,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 
 .main-content {
   flex: 4;
