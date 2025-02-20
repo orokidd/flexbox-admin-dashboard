@@ -76,12 +76,12 @@ body {
   font-size: 1.1rem;
 }
 
-
 /* Right side */
 .container-2 {
   flex: 4;
   display: flex;
   flex-direction: column;
+  
 }
 
 /* Top-right side */
@@ -91,12 +91,14 @@ body {
   box-shadow: 1px 1px 2px 2px rgb(197, 197, 197);
   display: flex;
   flex-direction: column;
+  padding: 8px 48px;
+  
 }
 .top-bar-one {
   display: flex;
   justify-content: space-between;
-  margin: 12px 26px 16px 26px;
-  min-width: 860px;
+  /* margin: 12px 26px 16px 26px; */
+  min-width: 820px;
 }
 .top-bar-one .search-bar {
   display: flex;
@@ -109,7 +111,7 @@ body {
   height: 24px;
   border: none;
   border-radius: 12px;
-  background-color: rgb(188, 202, 202);
+  background-color: rgb(209, 223, 223);
 }
 
 .top-bar-one .profile-section {
@@ -129,6 +131,7 @@ body {
 .top-bar-two {
   display: flex;
   justify-content: space-between;
+  margin-top: 12px;
 }
 .top-bar-two .greeting-section {
   display: flex;
@@ -138,13 +141,30 @@ body {
   margin-right: 16px;
 }
 .top-bar-two .greeting-section img {
-  margin-left: 26px;
+  /* margin-left: 26px; */
   width: 50px;
   border-radius: 50%;
 }
 
 .top-bar-two .text-1 {
   font-size: 12px;
+}
+
+.top-bar-two .buttons-section {
+  display: flex;
+}
+
+.top-bar-two button {
+  border: none;
+  height: 32px;
+  width: 80px;
+  margin-left: 12px;
+  background-color: rgb(149, 161, 161);
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  align-self: center;
 }
 
 .main-content {
