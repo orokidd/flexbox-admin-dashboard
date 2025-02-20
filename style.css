@@ -18,7 +18,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  min-width: 180px;
+  min-width: 190px;
   max-width: 260px;
   background-color: rgb(149, 161, 161);
 }
@@ -48,6 +48,12 @@ body {
 }
 .options-1 li {
   margin-bottom: 12px;
+}
+.options-1 a {
+  margin-left: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
 .options-2 {
