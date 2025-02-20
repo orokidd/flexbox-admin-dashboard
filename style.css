@@ -87,7 +87,7 @@ body {
 /* Top-right side */
 .top-bar {
   flex: 1;
-  min-height: 100px;
+  min-height: 160px;
   box-shadow: 1px 1px 2px 2px rgb(197, 197, 197);
   display: flex;
   flex-direction: column;
@@ -95,8 +95,12 @@ body {
 .top-bar-one {
   display: flex;
   justify-content: space-between;
-  padding: 24px;
-  min-width: 760px;
+  padding: 26px;
+  min-width: 860px;
+}
+.top-bar-one .search-bar {
+  display: flex;
+  align-items: center;
 }
 .top-bar-one .input-box {
   margin-left: 16px;
@@ -105,8 +109,23 @@ body {
   height: 24px;
   border: none;
   border-radius: 12px;
-  background-color: rgb(195, 219, 180);
+  background-color: rgb(188, 202, 202);
 }
+
+.top-bar-one .profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar-one .profile-section div {
+  margin-left: 16px;
+}
+
+.top-bar-one .profile-section img {
+  width: 40px;
+  border-radius: 50%;
+}
+
 .top-bar-two {
   display: flex;
   justify-content: space-between;
