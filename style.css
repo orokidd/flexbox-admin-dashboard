@@ -19,14 +19,27 @@ body {
   display: flex;
   flex-direction: column;
   border: solid 1px red;
+  min-width: 180px;
+  background-color: rgb(149, 161, 161);
 }
 
 .dashboard-logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
   flex: 1;
 }
 
+.sidebar-logo {
+  width: 50px;
+}
+
+.logo-text {
+  font-size: 26px;
+}
+
 .options-1 {
-  flex: 2;
+  flex: 3;
 }
 
 .options-2 {
