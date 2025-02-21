@@ -200,6 +200,19 @@ body {
   box-shadow: 1px 2px 5px 1px rgb(221, 221, 221);
   border-radius: 12px;
 }
+.trending .trending-content {
+  display: flex;
+  padding: 8px 0;
+}
+.trending-content:hover {
+  cursor: pointer;
+}
+
+.trending-content .trending-account {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+}
 
 .anouncement-content label {
   font-size: 14px;
@@ -217,4 +230,9 @@ body {
   font-size: 10px;
   margin-bottom: 12px;
   color: rgb(129, 129, 129);
+}
+
+.right-bar img {
+  width: 46px;
+  border-radius: 50%;
 }
