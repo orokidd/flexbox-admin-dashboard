@@ -123,7 +123,9 @@ body {
 
 .top-bar-one .profile-section img {
   width: 40px;
+  height: 40px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .top-bar-two {
@@ -234,5 +236,7 @@ body {
 
 .right-bar img {
   width: 46px;
+  height: 46px;
   border-radius: 50%;
+  object-fit: cover;
 }
