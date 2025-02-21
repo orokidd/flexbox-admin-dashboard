@@ -249,7 +249,11 @@ body {
 .projects-list .project-content{
   border: solid 1px red;
   width: 360px;
-  padding: 16px;
+  padding: 26px;
   margin-right: 24px;
   margin-bottom: 24px;
+}
+
+.project-content p{
+  color: rgb(48, 48, 48);
 }
