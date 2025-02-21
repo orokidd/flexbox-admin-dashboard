@@ -29,7 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .sidebar-logo {
@@ -41,7 +41,7 @@ body {
 }
 
 .options-1 {
-  flex: 3;
+  /* flex: 3; */
   padding: 24px;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .options-2 {
-  flex: 5;
+  /* flex: 5; */
   padding: 24px;
 }
 .options-2 > ul {
@@ -247,11 +247,23 @@ body {
 }
 
 .projects-list .project-content{
+
   border: solid 1px red;
-  width: 360px;
+  flex:1;
+  min-width: 360px;
+  height: 240px;
   padding: 26px;
   margin-right: 24px;
   margin-bottom: 24px;
+}
+
+.project-content p{
+display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-content p{
