@@ -173,8 +173,7 @@ body {
   flex: 6;
   /* border: solid 1px red; */
   display: flex;
-  padding-top: 40px;
-  padding-left: 20px;
+  padding: 40px 20px;
 }
 .your-projects {
 flex: 3;
@@ -187,7 +186,15 @@ flex-direction: column;
 }
 .anouncement {
   height: 50%;
+  max-width: 320px;
+  background-color: white;
+  box-shadow: 1px 2px 5px 1px rgb(221, 221, 221);
+  border-radius: 12px;
 }
 .trending {
   height: 50%;
+  max-width: 320px;
+  background-color: white;
+  box-shadow: 1px 2px 5px 1px rgb(221, 221, 221);
+  border-radius: 12px;
 }
