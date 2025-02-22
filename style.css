@@ -4,20 +4,28 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: montserrat;
+  src: url(./assets/fonts/Montserrat.ttf);
+}
+
 /* Wrapper container  */
 .big-container {
   display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Left-sidebar */
 .container {
   flex: 1;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  min-height: 100vh;
   min-width: 200px;
   max-width: 260px;
-  background-color: rgb(149, 161, 161);
+  background-color: rgb(61, 80, 80);
+  z-index: 2;
 }
 
 .dashboard-logo {
@@ -85,10 +93,11 @@
   display: flex;
   flex-direction: column;
 
-  box-shadow: 1px 1px 2px 4px rgb(165, 165, 165);
+  box-shadow: 1px 1px 2px 4px rgb(219, 219, 219);
   background-color: white;
   padding: 8px 48px;
   min-width: 800px;
+  z-index: 1;
 }
 .top-bar-one {
   display: flex;
@@ -171,6 +180,10 @@
   display: flex;
   flex-direction: column;
 }
+.right-bar > span {
+  display: block;
+  margin-bottom: 12px;
+}
 .anouncement {
   /* height: 240px; #you don't need height because it follows the content inside it */
   width: 300px;
@@ -239,11 +252,15 @@
   flex: 4;
   
 }
+.your-projects > span {
+  display: block;
+  margin-bottom: 12px;
+  /* font-family: 'montserrat'; */
+}
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .projects-list .project-content{
