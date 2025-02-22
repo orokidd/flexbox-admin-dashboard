@@ -25,7 +25,7 @@
   font-family: "quicksand", "Arial Narrow", Arial, sans-serif;
 }
 
-/* Left-sidebar */
+/* Left Side Container */
 .container {
   flex: 1;
   display: flex;
@@ -44,6 +44,7 @@
   align-items: center;
 
   padding: 12px;
+  margin-bottom: 24px;
 }
 
 .sidebar-logo {
@@ -56,7 +57,6 @@
   font-size: 26px;
   font-weight: bold;
   color: white;
-  
 }
 
 .options-1,
@@ -70,18 +70,10 @@
   filter: invert();
 }
 
-.options-1 {
-  margin-top: 24px;
-}
-
-.options-1 > ul, .options-2 > ul  {
-  list-style: none;
-}
-
 .options-1 li,
 .options-2 li {
   display: flex;
-
+  list-style: none;
   margin-bottom: 28px;
 }
 
@@ -92,14 +84,14 @@
   color: white;
 }
 
-/* Container-right side */
+/* Right Side Container */
 .container-2 {
   flex: 5;
   display: flex;
   flex-direction: column;
 }
 
-/* Top-right */
+/* Top Section */
 .top-bar {
   flex: 1;
   display: flex;
@@ -107,14 +99,16 @@
 
   box-shadow: 1px 1px 2px 4px rgb(219, 219, 219);
   background-color: white;
-  padding: 8px 48px;
+  padding: 26px 48px;
   min-width: 800px;
   z-index: 1;
 }
-.top-bar-one {
+.top-bar-one, .top-bar-two {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
 .top-bar-one .search-bar {
   display: flex;
   align-items: center;
@@ -125,19 +119,16 @@
   margin-left: 16px;
   padding-left: 12px;
   width: 100%;
-  height: 24px;
+  height: 30px;
   border: none;
-  border-radius: 12px;
-  background-color: rgb(209, 223, 223);
+  border-radius: 18px;
+  background-color: rgb(235, 235, 235);
 }
 
 .top-bar-one .profile-section {
   display: flex;
   align-items: center;
-}
-
-.top-bar-one .profile-section div {
-  margin-left: 16px;
+  gap: 16px;
 }
 
 .top-bar-one .profile-section img {
@@ -147,22 +138,13 @@
   object-fit: cover;
 }
 
-.top-bar .icon {
-  width: 12px;
-}
-
 .top-bar-two {
-  display: flex;
-  justify-content: space-between;
-
   margin-top: 12px;
 }
 .top-bar-two .greeting-section {
   display: flex;
   align-items: center;
-}
-.top-bar-two .greeting-section > div {
-  margin-right: 16px;
+  gap: 16px;
 }
 .top-bar-two .greeting-section img {
   width: 50px;
@@ -175,13 +157,13 @@
 
 .top-bar-two .buttons-section {
   display: flex;
+  gap: 16px;
 }
 
 .top-bar-two button {
   border: none;
   height: 32px;
   width: 80px;
-  margin-left: 12px;
   background-color: var(--primary-color);
   border-radius: 20px;
   cursor: pointer;
@@ -190,12 +172,17 @@
   align-self: center;
 }
 
-/* Right-bar */
+.top-bar .icon {
+  width: 12px;
+}
+
+/* Right side of Main Content */
 .right-bar {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+
 .right-bar > span,
 .your-projects > span {
   display: block;
@@ -203,45 +190,31 @@
   font-size: 20px;
   color: rgb(61, 80, 80);
 }
-.anouncement {
-  /* height: 240px; #you don't need height because it follows the content inside it */
+
+.anouncement, .trending {
   width: 300px;
   padding: 24px;
   background-color: white;
   box-shadow: 1px 2px 5px 1px rgb(221, 221, 221);
   border-radius: 12px;
-
   margin-bottom: 34px;
 }
-.trending {
-  width: 300px;
-  padding: 16px;
-  background-color: white;
-  box-shadow: 1px 2px 5px 1px rgb(221, 221, 221);
-  border-radius: 12px;
+
+.anouncement-content, .trending-content{
+  padding: 8px 0;
 }
 .trending .trending-content {
   display: flex;
-
-  padding: 8px 0;
-}
-.trending-content:hover {
-  cursor: pointer;
+  align-items: center;
+  gap: 12px;
 }
 
 .trending-content .trending-account {
   display: flex;
   flex-direction: column;
-
-  padding-left: 12px;
 }
 
-.anouncement-content label {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.right-bar .article {
+.right-bar .text {
   display: -webkit-box;
   line-clamp: 3;
   -webkit-line-clamp: 3;
@@ -250,7 +223,6 @@
   text-overflow: ellipsis;
 
   font-size: 10px;
-  margin-bottom: 12px;
   color: rgb(129, 129, 129);
 }
 
@@ -302,18 +274,15 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.project-content p {
   color: rgb(48, 48, 48);
 }
 
 .project-content .icons {
   display: flex;
   justify-content: flex-end;
+  gap: 12px;
 }
 
 .project-content .icons > span {
-  margin-left: 12px;
   cursor: pointer;
 }
