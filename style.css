@@ -128,14 +128,14 @@
 .top-bar-one .profile-section {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 26px;
 }
 
-.top-bar-one .profile-section img {
-  width: 40px;
-  height: 40px;
+.top-bar-one  .top-right-pp{
   border-radius: 50%;
   object-fit: cover;
+  width: 40px;
+  height: 40px;
 }
 
 .top-bar-two {
@@ -146,9 +146,11 @@
   align-items: center;
   gap: 16px;
 }
-.top-bar-two .greeting-section img {
+.top-bar-two .top-center-pp {
   width: 50px;
+  height: 50px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .top-bar-two .text-1 {
