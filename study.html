@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="big-container">
-      <div class="container">
+    <div class="wrapper">
+      
+      <aside class="container-side">
         <div class="dashboard-logo">
           <img src="./assets/alpha-m.svg" class="sidebar-logo" />
           <p class="logo-text">Dashboard</p>
         </div>
-        <div class="options-1">
+        <nav class="options-1">
           <ul>
             <li><img src="./assets/house.svg" alt=""><a href="">Home</a></li>
             <li><img src="./assets/user-round.svg" alt=""><a href="">Profile</a></li>
@@ -22,22 +23,22 @@
             <li><img src="./assets/circle-check-big.svg" alt=""><a href="">Tasks</a></li>
             <li><img src="./assets/users-round.svg" alt=""><a href="">Communities</a></li>
           </ul>
-        </div>
-        <div class="options-2">
+        </nav>
+        <nav class="options-2">
           <ul>
             <li><img src="./assets/settings.svg" alt=""><a href="">Settings</a></li>
             <li><img src="./assets/circle-help.svg" alt=""><a href="">Support</a></li>
             <li><img src="./assets/shield-alert.svg" alt=""><a href="">Privacy</a></li>
           </ul>
-        </div>
-      </div>
+        </nav>
+      </aside>
 
-      <div class="container-2">
-        <div class="top-bar">
-          <div class="top-bar-one">
-            <div class="search-bar">
+      <div class="container-main">
+        <header class="top-bar">
+          <section class="section-one">
+            <form class="search-bar" role="search">
               <img src="./assets/search.svg" alt=""><input type="text" class="input-box" placeholder="Search"/>
-            </div>
+            </form>
             <div class="profile-section">
               <img src="./assets/bell.svg" alt="">
               <div class="profile-picture">
@@ -45,8 +46,9 @@
               </div>
               <div class="user-name">Deandra Hanifa</div>
             </div>
-          </div>
-          <div class="top-bar-two">
+          </section>
+
+          <section class="section-two">
             <div class="greeting-section">
               <div class="profile-picture">
                 <img class="top-center-pp" src="./assets/profile-pict.jpg" alt="profile-picture" />
@@ -56,25 +58,24 @@
                 <div class="text-2">Deandra Hanifa (@Deandra)</div>
               </div>
             </div>
-
-            <div class="buttons-section">
+            <nav class="buttons-section">
               <button class="btn-new">New</button>
               <button class="btn-upload">Upload</button>
               <button class="btn-share">Share</button>
-            </div>
-          </div>
-        </div>
+            </nav>
+          </section>
+        </header>
 
-        <div class="main-content">
-          <div class="your-projects">
+        <main class="main-content">
+          <section class="your-projects">
             <span>Your Projects</span>
             <div class="projects-list">
-              <div class="project-content">
+              <article class="project-content">
                 <div class="title-text">
-                  <h3>Site Maintenance</h3>
+                  <h3>Super Cool Project</h3>
                   <p class="text">
                     There are many variations of passages of Lorem Ipsum
-                    available,
+                    available
                   </p>
                 </div>
                 <div class="icons">
@@ -82,14 +83,13 @@
                   <span>👁️</span>
                   <span>↪️</span>
                 </div>
-              </div>
-
-              <div class="project-content">
+              </article>
+              <article class="project-content">
                 <div class="title-text">
-                  <h3>Site Maintenance</h3>
+                  <h3>Less Cool Project</h3>
                   <p class="text">
                     There are many variations of passages of Lorem Ipsum
-                    available,
+                    available
                   </p>
                 </div>
                 <div class="icons">
@@ -97,11 +97,10 @@
                   <span>👁️</span>
                   <span>↪️</span>
                 </div>
-              </div>
-
-              <div class="project-content">
+              </article>
+              <article class="project-content">
                 <div class="title-text">
-                  <h3>Site Maintenance</h3>
+                  <h3>Impossible App</h3>
                   <p class="text">
                     There are many variations of passages of Lorem Ipsum
                     available, There are many variations of passages of Lorem
@@ -111,7 +110,7 @@
                     passages of Lorem Ipsum available, There are many variations
                     of passages of Lorem Ipsum available, There are many
                     variations of passages of Lorem Ipsum available, There are
-                    many variations of passages of Lorem Ipsum available,
+                    many variations of passages of Lorem Ipsum available
                   </p>
                 </div>
                 <div class="icons">
@@ -119,11 +118,10 @@
                   <span>👁️</span>
                   <span>↪️</span>
                 </div>
-              </div>
-
-              <div class="project-content">
+              </article>
+              <article class="project-content">
                 <div class="title-text">
-                  <h3>Site Maintenance</h3>
+                  <h3>Easy Peasy App</h3>
                   <p class="text">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
@@ -136,11 +134,10 @@
                   <span>👁️</span>
                   <span>↪️</span>
                 </div>
-              </div>
-
-              <div class="project-content">
+              </article>
+              <article class="project-content">
                 <div class="title-text">
-                  <h3>Site Maintenance</h3>
+                  <h3>Ad Blocker</h3>
                   <p class="text">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
@@ -153,11 +150,10 @@
                   <span>👁️</span>
                   <span>↪️</span>
                 </div>
-              </div>
-
-              <div class="project-content">
+              </article>
+              <article class="project-content">
                 <div class="title-text">
-                  <h3>Site Maintenance</h3>
+                  <h3>We Are So Back</h3>
                   <p class="text">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
@@ -170,14 +166,14 @@
                   <span>👁️</span>
                   <span>↪️</span>
                 </div>
-              </div>
+              </article>
             </div>
-          </div>
+          </section>
 
-          <div class="right-bar">
+          <section class="right-bar">
             <span>Anouncement</span>
             <div class="anouncement">
-              <div class="anouncement-content">
+              <article class="anouncement-content">
                 <label>Site Maintenance</label>
                 <p class="text">
                   There are many variations of passages of Lorem Ipsum
@@ -185,8 +181,8 @@
                   form, by injected humour, or randomised words which don't look
                   even slightly believable.
                 </p>
-              </div>
-              <div class="anouncement-content">
+              </article>
+              <article class="anouncement-content">
                 <label>Community Share Day</label>
                 <p class="text">
                   There are many variations of passages of Lorem Ipsum
@@ -194,8 +190,8 @@
                   form, by injected humour, or randomised words which don't look
                   even slightly believable.
                 </p>
-              </div>
-              <div class="anouncement-content">
+              </article>
+              <article class="anouncement-content">
                 <label>Updated Privacy Policy</label>
                 <p class="text">
                   There are many variations of passages of Lorem Ipsum
@@ -203,12 +199,12 @@
                   form, by injected humour, or randomised words which don't look
                   even slightly believable.
                 </p>
-              </div>
+              </article>
             </div>
 
             <span>Trending</span>
-            <div class="trending">
-              <div class="trending-content">
+            <section class="trending">
+              <article class="trending-content">
                 <div class="profile-picture">
                   <img src="./assets/pp1.jpg" alt="profile-picture" />
                 </div>
@@ -216,8 +212,8 @@
                   <label>@tegan</label>
                   <p class="text">World Peace Builder</p>
                 </div>
-              </div>
-              <div class="trending-content">
+              </article>
+              <article class="trending-content">
                 <div class="profile-picture">
                   <img src="./assets/pp2.jpg" alt="profile-picture" />
                 </div>
@@ -225,8 +221,8 @@
                   <label>@heydhey</label>
                   <p class="text">What could've been</p>
                 </div>
-              </div>
-              <div class="trending-content">
+              </article>
+              <article class="trending-content">
                 <div class="profile-picture">
                   <img src="./assets/pp3.jpg" alt="profile-picture" />
                 </div>
@@ -234,8 +230,8 @@
                   <label>@tarrss</label>
                   <p class="text">A dumbass</p>
                 </div>
-              </div>
-              <div class="trending-content">
+              </article>
+              <article class="trending-content">
                 <div class="profile-picture">
                   <img src="./assets/pp4.jpg" alt="profile-picture" />
                 </div>
@@ -243,11 +239,12 @@
                   <label>@hudahuu</label>
                   <p class="text">Dumbass number two</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+              </article>
+            </section>
+          </section>
+        </main>
       </div>
+
     </div>
 
     <script src="main.js"></script>

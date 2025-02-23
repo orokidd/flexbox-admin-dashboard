@@ -19,14 +19,14 @@
 }
 
 /* Wrapper container  */
-.big-container {
+.wrapper {
   display: flex;
   min-height: 100vh;
   font-family: "quicksand", "Arial Narrow", Arial, sans-serif;
 }
 
 /* Left Side Container */
-.container {
+.container-side {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -75,6 +75,7 @@
   display: flex;
   list-style: none;
   margin-bottom: 28px;
+  cursor: pointer;
 }
 
 .options-1 a,
@@ -85,7 +86,7 @@
 }
 
 /* Right Side Container */
-.container-2 {
+.container-main {
   flex: 5;
   display: flex;
   flex-direction: column;
@@ -103,19 +104,19 @@
   min-width: 800px;
   z-index: 1;
 }
-.top-bar-one, .top-bar-two {
+.section-one, .section-two {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.top-bar-one .search-bar {
+.section-one .search-bar {
   display: flex;
   align-items: center;
 
   width: 60%;
 }
-.top-bar-one .input-box {
+.section-one .input-box {
   margin-left: 16px;
   padding-left: 12px;
   width: 100%;
@@ -125,44 +126,44 @@
   background-color: rgb(235, 235, 235);
 }
 
-.top-bar-one .profile-section {
+.section-one .profile-section {
   display: flex;
   align-items: center;
   gap: 26px;
 }
 
-.top-bar-one  .top-right-pp{
+.section-one  .top-right-pp{
   border-radius: 50%;
   object-fit: cover;
   width: 40px;
   height: 40px;
 }
 
-.top-bar-two {
+.section-two {
   margin-top: 12px;
 }
-.top-bar-two .greeting-section {
+.section-two .greeting-section {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.top-bar-two .top-center-pp {
+.section-two .top-center-pp {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.top-bar-two .text-1 {
+.section-two .text-1 {
   font-size: 12px;
 }
 
-.top-bar-two .buttons-section {
+.section-two .buttons-section {
   display: flex;
   gap: 16px;
 }
 
-.top-bar-two button {
+.section-two button {
   border: none;
   height: 32px;
   width: 80px;
