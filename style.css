@@ -278,6 +278,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   color: rgb(48, 48, 48);
+  overflow-wrap: break-word;
 }
 
 .project-content .icons {
